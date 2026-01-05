@@ -105,7 +105,7 @@ Header I2C Pins (SCL/SDA)
 - ✓ Under-temperature protection (via NTC)
 
 ### Monitoring Features
-- ✓ Cell voltage monitoring (via BQ29209)
+- ✓ Cell voltage protection (internal monitoring by BQ29209; no external voltage readout)
 - ✓ Critical temperature monitoring (via NTC → BQ29209)
 - ✓ Precision temperature monitoring (via TMP117 → I2C)
 - ✓ Thermal pad sensing (via header pins)
