@@ -8,7 +8,7 @@
 | CELL1, CELL2 | 2 | CALB | DTP803450 | LiFePO4 Battery Cell, 3.2V | Series configuration |
 | RT1 | 1 | TBD | NTC Thermistor | NTC Temperature Sensor, 10kΩ @ 25°C | For BQ29209 temperature monitoring |
 | U2 | 1 | Texas Instruments | TMP117 | High-Accuracy Digital Temperature Sensor | I2C interface, externally powered |
-| J1 | 1 | TBD | Header Connector | Main header for power, ground, and I2C | Pin count TBD based on final design |
+| J1 | 1 | TBD | Header Connector | Main header for power, ground, and I2C | 10-pin header (per PINOUT.md) |
 | TP1 | 1 | TBD | Thermal Pad | Thin PCB or silicone thermal pad | With header pins for thermal sensing |
 | Q1, Q2 | 2 | TBD | N-Channel MOSFET | Charge/Discharge control FETs | Selected based on BQ29209 requirements |
 | R1-R4 | 4 | TBD | Resistor | Pull-up resistors for I2C, voltage dividers | Values per BQ29209 datasheet |
