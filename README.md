@@ -59,7 +59,7 @@ The baseline configuration including:
 
 1. **TMP117 Power**: The TMP117 temperature sensor is **NOT** powered by the battery pack. External power supply is required.
 
-2. **I2C Bus**: Both the BQ29209 (if equipped with I2C) and TMP117 share the same I2C bus accessible via the main header.
+2. **I2C Bus**: The I2C bus accessible via the main header is used by the TMP117 temperature sensor and is available for future expansion.
 
 3. **Thermal Contact**: The NTC thermistor must have good thermal contact with the battery cells for proper protection.
 

@@ -27,9 +27,9 @@ This header consolidates all external connections for the battery pack system.
 - **VIN+/VIN-**: Charging input, protected by BQ29209
 
 ### I2C Bus
-- **SCL/SDA**: Shared I2C communication bus
-  - Connected to BQ29209 (if I2C monitoring is supported)
+- **SCL/SDA**: I2C communication bus
   - Connected to TMP117 for temperature readout
+  - Available for future I2C device expansion
   - Requires external pull-up resistors (typically 4.7kΩ)
 
 ### TMP117 Power
@@ -45,13 +45,12 @@ This header consolidates all external connections for the battery pack system.
 
 | Device | Default I2C Address | Notes |
 |--------|-------------------|-------|
-| BQ29209 | N/A | BQ29209 may not have I2C (depends on specific variant) |
 | TMP117 | 0x48 (default) | Configurable via ADD0 pin |
 
 ## Electrical Specifications
 
-- **VBAT+ Output**: 5.0V to 7.3V nominal (2S LiFePO4)
-- **VIN+ Input**: 7.0V to 7.6V (for 2S LiFePO4 charging)
+- **VBAT+ Output**: 6.4V nominal (5.0V to 7.3V operating range, 2S LiFePO4)
+- **VIN+ Input**: 7.0V to 7.3V (max) (for 2S LiFePO4 charging)
 - **I2C Bus**: 3.3V or 5V logic levels (ensure compatibility)
 - **TMP117_VDD**: 1.7V to 5.5V
 - **Maximum Current**: TBD based on BQ29209 and MOSFET ratings

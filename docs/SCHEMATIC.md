@@ -18,7 +18,7 @@ This document describes the schematic design for a 2S LiFePO4 battery pack with 
   - 2-series cell Li-ion/LiFePO4 battery protection
   - Precision voltage monitoring
   - Temperature monitoring via NTC thermistor
-  - I2C interface for configuration and monitoring
+  - Analog protection IC (no communication interface)
 
 ### Temperature Sensors
 
@@ -56,7 +56,7 @@ The main header provides the following connections:
 2. **I2C Bus**:
    - SCL (Serial Clock)
    - SDA (Serial Data)
-   - Connected to BQ29209 (if I2C capable) and TMP117
+   - Connected to TMP117
 
 3. **TMP117 Connections**:
    - VDD (External power supply)

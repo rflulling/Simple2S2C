@@ -17,7 +17,7 @@ All requirements from the project specification have been successfully implement
 
 ### ✅ Communication Interface
 - [x] I2C bus (SCL, SDA) routed to header
-- [x] I2C shared between BQ29209 and TMP117
+- [x] I2C bus used by TMP117 temperature sensor
 
 ### ✅ Temperature Monitoring
 - [x] NTC thermistor integrated with BQ29209 for critical temperature detection
@@ -60,7 +60,7 @@ All requirements from the project specification have been successfully implement
 - Under-temperature protection
 
 ### Monitoring
-- Per-cell voltage monitoring via BQ29209
+- Per-cell over/undervoltage protection via BQ29209 (internal cell-voltage monitoring, no external readout)
 - Critical temperature via NTC thermistor
 - High-precision temperature via TMP117 (I2C)
 - Thermal pad sensing capability
@@ -110,7 +110,7 @@ All signals consolidated to a single main header (J1):
       
       ┌──────────────┐
       │ Thermal Pad  ├──── THERMAL_SENSE pins to header
-      │ (PCB/Silicon)│
+      │ (PCB/Silicone)│
       └──────────────┘
 ```
 
