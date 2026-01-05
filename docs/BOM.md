@@ -23,7 +23,7 @@
 
 ## Notes
 1. The TMP117 is NOT powered by the battery pack - external power required
-2. All I2C devices (BQ29209 if capable, TMP117) share the same I2C bus on the header
+2. The TMP117 is the only I2C device and uses the shared I2C bus on the header
 3. Thermal pad includes separate header pins for thermal sensing
 4. Component values (resistors, capacitors) to be determined from IC datasheets
 5. MOSFET selection depends on maximum charge/discharge current requirements
