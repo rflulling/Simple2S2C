@@ -12,8 +12,8 @@ This header consolidates all external connections for the battery pack system.
 | 2 | VBAT+ | Output | Battery Pack Positive Output | Protected battery output |
 | 3 | VIN+ | Input | Charging Input Positive | Input for battery charging |
 | 4 | VIN- / GND | Input | Charging Input Ground | Shared with pin 1 |
-| 5 | SCL | Bidir | I2C Serial Clock | Shared I2C bus |
-| 6 | SDA | Bidir | I2C Serial Data | Shared I2C bus |
+| 5 | SCL | Bidir | I2C Serial Clock | I2C bus (TMP117) |
+| 6 | SDA | Bidir | I2C Serial Data | I2C bus (TMP117) |
 | 7 | TMP117_VDD | Input | TMP117 External Power Supply | NOT from battery pack |
 | 8 | TMP117_GND | - | TMP117 Ground | Connected to common ground |
 | 9 | THERMAL_SENSE_1 | Input | Thermal Pad Sense Pin 1 | From thermal pad |
